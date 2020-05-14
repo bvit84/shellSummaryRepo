@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+<head>
+    <title> Shell Summary </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<h1>
+    <details>
+        <summary>Shell Summary</summary>
+        <h6>
+            xxx
+        </h>
+    </details>
+</h1>
+
+<table id = "summary">
+    <colgroup>
+        <col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Shell Commands</th>
+            <th>Effect</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td>$ 'command' --help</td>
+            <td>hows help for the shell command</td>
+            <td>$ mv --help</td>
+        </tr>
+        <tr>
+            <td>$ clear</td>
+            <td>Clears terminal screen</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>$ mv 'source' 'destination'</td>
+            <td>Rename/move source to destination</td>
+            <td>
+                $ mv wronNameFile correctNameFile
+            </td>
+        </tr>
+        <tr>
+            <td>$ rm</td>
+            <td>Remove files and directories</td>
+            <td>
+                $ rmdir (Delete directories.)<br>
+                $ rm -i valueable.txt (removes file with "interactive"/warning prompt)
+            </td>
+        </tr>
+        <tr>
+            <td>$ mkdir and $ touch</td>
+            <td>Commands to create new directory and files</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>$ start .</td>
+            <td>Opens terminal directory folder in windows file explorer.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>$ cd "path"</td>
+            <td>Change working directory</td>
+            <td>
+                $ cd (change to top shell dierctory)<br>
+                $ cd .. (change to parent dir. )<br> 
+                $ cd Documents/Yellowstone/Bears/ (Change Shell working directory
+                 to bear folder)
+            </td>
+        </tr>
+        <tr>
+            <td>$ ls</td>
+            <td>List the files in the directory.</td>
+            <td>
+                $ ls . = $ ls (list files in current dir.)<br>
+                $ ls ~ (list files in my home dir.)<br>
+                $ ls -l (option to list in a long /detailed form)<br>
+                $ ls *.pdf (list of all .pdf files)
+            </td>
+        </tr>
+        <tr>
+            <td>$ echo</td>
+            <td>Print message back in terminal </td>
+            <td>$ echo $COLUMNS x $LINES</td>
+        </tr>
+        <tr>
+            <td>;</td>
+            <td>Allows 2 Shell commands on same line</td>
+            <td>$ cd.. ; ls</td>
+        </tr>
+        <tr>
+            <td>pwd</td>
+            <td>Print Working Directory</td>
+            <td>$ pwd </td>
+        </tr>
+        <tr>
+            <td>$ curl</td>
+            <td>"see url" is used in command lines or scripts to transfer data.</td>
+            <td>
+                $ curl 'http://google.com' (Show source code of a web page)<br>
+                $ curl -L 'http:...' (Follow redirects)<br>
+                $ curl -o google.html -L 'http://google.com' 
+                (save code directly to g.html file)
+            </td>
+        </tr>
+        <tr>
+            <td>$ cat</td>
+            <td>View/concatenate file content.</td>
+            <td>
+                $ cat text.txt (text content)
+            </td>
+        </tr>
+        <tr>
+            <td>$ less</td>
+            <td>View file content screen by screen.</td>
+            <td>
+                $ less longbigtext.txt (text content with space and arrows, "q" to quit)
+            </td>
+        </tr>
+        <tr>
+            <td>$ wc</td>
+            <td>
+                "word count" reads either standard input or a list of files and generates 
+                one or more of the following statistics: 
+                newline count, word count, and byte count
+            </td>
+            <td>$c ws -l (line count)</td>
+        </tr>
+        <tr>
+            <td>$ grep</td>
+            <td>
+                "Global regular expression print,” processes text line by line and prints 
+                any lines which match a specified pattern.
+            </td>
+            <td>
+                $ grep wordToFind textFile.txt (Output all lines containing wordToFind)<br>
+                $ grep wordToFind textFile.txt | less (Output to Less which results in 
+                page by page find)<br>
+                $ curl -L 'http...' | grep -c fish (-c counts how many fish in url)
+            </td>
+        </tr>
+        <tr>
+            <td>variableName=Value</td>
+            <td>
+                Variables in Shell. More 
+                <a href="https://friendly-101.readthedocs.io/en/latest/bashprofile.html">
+                    here</a></td>
+            <td>
+                $ varName='variable' (assignment)<br>
+                $ echo $varName (Variable call)<br>
+                $ echo $LINES x $COLUMNS (Internall Shell variables:
+                prints terminal window dimension)<br>
+                $ echo $PATH (Enviroment variable are shered within 
+                programs run from within the Shell: returns path to Program Shell files)
+            </td>
+        </tr>
+        <tr>
+            <td>$ PS1</td>
+            <td>Controlling the shell prompt ($PS1)</td>
+            <td>
+                The tool is <a href="http://bashrcgenerator.com/">here</a> 
+                by Julien Ricard. Try it out!
+            </td>
+        </tr>
+        <tr>
+            <td>$ alias</td>
+            <td>Allows you to create short names for commands.</td>
+            <td>
+                $ alias ll='ls -la'<br>
+                $ alias (show all alias created)
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Last updated: 5/2020</td>
+            <td colspan="2">
+                Shell resources: <a href="http://www.bash.academy/">The Bash Academy</a>, 
+                <a href="http://www.tldp.org/LDP/Bash-Beginners-Guide/html/">
+                    Bash Beginners Guide</a>, 
+                <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">
+                    Bash Programming HOWTO</a>, 
+                <a href="http://regexr.com/">Regexr — Learn Regular Expressions</a>.
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
